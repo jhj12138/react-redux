@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{ Component } from 'react'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Layout from './layout'
+// import MeNav from './page/Menu.jsx'
+// import Pagin from './page/pagination.jsx'
+// import Cascader from './page/cascader'
+// import Drag from './page/Drag'
+// import Map from './page/map'
+import DragNDrop from './page/Dnd/dragNDrop'
+
+
+class  App extends Component{
+  render() {
+    return (
+      <>
+        {/* <Pagin></Pagin> */}
+        {/* <Cascader></Cascader> */}
+        {/* <Drag></Drag> */}
+        {/* <Map></Map> */}
+        <DragNDrop></DragNDrop>
+      </>
+    )
+  }
 }
+
+
+
 
 export default App;
